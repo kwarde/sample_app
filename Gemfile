@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
+
+#new relic add
+gem 'newrelic_rpm'
+
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.0'
