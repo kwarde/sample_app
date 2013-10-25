@@ -8,6 +8,7 @@ gem 'newrelic_rpm'
 
 gem 'rails', '4.0.0'
 gem 'pg', '0.15.1'
+gem "railties", "~> 4.0.0" #kevin trying to resolve heroku railties error
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.0.1'
 
@@ -33,5 +34,6 @@ group :doc do
 end
 
 group :production do
-  gem 'rails_12factor', '0.0.2'
+	gem 'pg', '0.15.1'
+	gem 'rails_12factor', '0.0.2'
 end
