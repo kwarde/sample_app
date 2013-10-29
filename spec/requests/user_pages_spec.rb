@@ -63,7 +63,7 @@ describe "UserPages" do
 
       it { should have_content('error') }
     end
-  end
+  
   describe "with valid information" do
       let(:new_name)  { "New Name" }
       let(:new_email) { "new@example.com" }
@@ -82,3 +82,4 @@ describe "UserPages" do
       specify { expect(user.reload.email).to eq new_email }
     end
   end
+end
