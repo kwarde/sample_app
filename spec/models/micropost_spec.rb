@@ -18,4 +18,15 @@ describe Micropost do
     before { @micropost.user_id = nil }
     it { should_not be_valid }
   end
+
+  describe "with blank content" do
+    before { @micropost.content should_not = " " }
+    it { should_not be_valid }
+  end
+
+  describe "shorter than 140 characters" do
+    before { @microopost.content = "a" *141 }
+    it {should_not be_valid}
+  end
+
 end
